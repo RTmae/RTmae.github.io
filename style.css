@@ -3,13 +3,13 @@
 -------------------- */
 
 :root {
-  --theme-color: #4fd1e8;          
-  --text-color: #e6eefc;         
-  --bg-start: #0a1128;           
-  --bg-end: #1c3a7a;               
-  --table-border: rgba(130, 170, 255, 0.25);
-  --table-row: rgba(255, 255, 255, 0.04);
-  --table-row-alt: rgba(255, 255, 255, 0.09);
+  --theme-color: #8fb8d9;          
+  --text-color: #d8dee9;       
+  --bg-start: #1a2233;             
+  --bg-end: #25344d;              
+  --table-border: #3a4a64;
+  --table-row: #202a3d;
+  --table-row-alt: #26324a;
 }
 
 * {
@@ -25,7 +25,7 @@ body {
   margin: 0;
   padding: 30px;
   color: var(--text-color);
-  background: linear-gradient(160deg, var(--bg-start) 0%, #13265a 55%, var(--bg-end) 100%);
+  background: linear-gradient(160deg, var(--bg-start) 0%, var(--bg-end) 100%);
   background-attachment: fixed;
   line-height: 1.7;
 }
@@ -37,7 +37,6 @@ body {
 h1, h2, h3 {
   color: var(--theme-color);
   border-bottom: dashed 0.1em var(--theme-color);
-  text-shadow: 0 0 12px rgba(79, 209, 232, 0.35);
 }
 
 /* --------------------
@@ -49,7 +48,6 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #9ff0ff;
   text-decoration: underline;
 }
 
@@ -62,7 +60,7 @@ ul {
 }
 li:before {
   content: "★";
-  color: #ffd866;                  /* 星は暗い青に映える黄色 */
+  color: var(--theme-color);
 }
 
 /* --------------------
@@ -74,8 +72,6 @@ table {
   border-collapse: collapse;
   border: solid 1px var(--table-border);
   min-width: 70%;
-  background: rgba(10, 17, 40, 0.35);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
 }
 tr {
   background-color: var(--table-row);
@@ -83,12 +79,9 @@ tr {
 tr:nth-child(2n) {
   background-color: var(--table-row-alt);
 }
-tr:hover td {
-  background-color: rgba(79, 209, 232, 0.12);
-}
 th {
-  background: linear-gradient(180deg, #2a6fd6, #1d4fa3);
-  color: #fff;
+  background: #334766;
+  color: #eef2f8;
 }
 th, td {
   border: solid 1px var(--table-border);
