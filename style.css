@@ -3,7 +3,7 @@
 -------------------- */
 
 :root {
-  --theme-color: #00a0a0;
+  --theme-color: #6169fa;
 }
 
 * {
@@ -62,7 +62,7 @@ table {
   min-width: 70%;
 }
 tr {
-  background-color: #fff;
+  background-color: #303030;
 }
 tr:nth-child(2n) {
   background-color: #f9f9f9;
