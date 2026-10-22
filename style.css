@@ -3,7 +3,7 @@
 -------------------- */
 
 :root {
-  --theme-color: #6169fa;
+  --theme-color: ##6686d1;
 }
 
 * {
@@ -47,7 +47,7 @@ ul {
   list-style: none;
 }
 li:before {
-  content: "★";
+  content: "・";
   color: var(--theme-color);
 }
 
@@ -61,12 +61,14 @@ table {
   border: solid 1px #f0f0f0;
   min-width: 70%;
 }
+/* --------------------
 tr {
   background-color: #303030;
 }
 tr:nth-child(2n) {
   background-color: #303030;
 }
+-------------------- */
 th {
   background: var(--theme-color);
   color: #fff;
